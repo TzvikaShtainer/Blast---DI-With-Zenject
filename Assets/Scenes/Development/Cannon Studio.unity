@@ -1034,9 +1034,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6609764479898507187, guid: 8eb2bcdd40bf8410fa6988cd869372a3,
+    - target: {fileID: 3295204935957460320, guid: 8eb2bcdd40bf8410fa6988cd869372a3,
         type: 3}
-      propertyPath: m_IsActive
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6782931781369867588, guid: 8eb2bcdd40bf8410fa6988cd869372a3,
@@ -1144,15 +1144,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6782931781369867591, guid: 8eb2bcdd40bf8410fa6988cd869372a3,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 6782931781369867592, guid: 8eb2bcdd40bf8410fa6988cd869372a3,
         type: 3}
       propertyPath: m_Name
       value: Gameplay UI Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6782931781369867592, guid: 8eb2bcdd40bf8410fa6988cd869372a3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -10,7 +10,8 @@ namespace Blast.VisualLayer.CannonStudio.Installers
             Container
                 .Bind<IPlayerInput>()
                 .To<DesktopInputManager>()
-                .AsSingle();
+                .AsSingle()
+                .IfNotBound();
         }
     }
 }

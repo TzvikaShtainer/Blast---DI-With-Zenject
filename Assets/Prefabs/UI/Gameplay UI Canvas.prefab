@@ -34,7 +34,7 @@ RectTransform:
   - {fileID: 6609764479898507184}
   - {fileID: 3236497526119378587}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -58,7 +58,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 80
   m_TargetDisplay: 0
@@ -107,6 +109,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 6782931781369867588}
     m_Modifications:
     - target: {fileID: 3881087803549984436, guid: 5d77e697f208d4ffab1a2b8facc2f543,
@@ -220,18 +223,79 @@ PrefabInstance:
       value: Horizontal Joystick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3881087803549984437, guid: 5d77e697f208d4ffab1a2b8facc2f543,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2869840747848793071}
+    - targetCorrespondingSourceObject: {fileID: 3881087803549984437, guid: 5d77e697f208d4ffab1a2b8facc2f543,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3295204935957460320}
   m_SourcePrefab: {fileID: 100100000, guid: 5d77e697f208d4ffab1a2b8facc2f543, type: 3}
+--- !u!1 &3236497526119378586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3881087803549984437, guid: 5d77e697f208d4ffab1a2b8facc2f543,
+    type: 3}
+  m_PrefabInstance: {fileID: 1816707194019907631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2869840747848793071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236497526119378586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b9e9119fa4427fa849c1baa914b85c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _joystick: {fileID: 5546711413236511613}
+--- !u!114 &3295204935957460320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236497526119378586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 2869840747848793071}
+  _identifier: 
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 1
 --- !u!224 &3236497526119378587 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3881087803549984436, guid: 5d77e697f208d4ffab1a2b8facc2f543,
     type: 3}
   m_PrefabInstance: {fileID: 1816707194019907631}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5546711413236511613 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6183404036627446610, guid: 5d77e697f208d4ffab1a2b8facc2f543,
+    type: 3}
+  m_PrefabInstance: {fileID: 1816707194019907631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236497526119378586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6111438572510958088
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 6782931781369867588}
     m_Modifications:
     - target: {fileID: 1110885827471902136, guid: 3df82d52f42954a71b87c05ac338a690,
@@ -345,6 +409,9 @@ PrefabInstance:
       value: Gameplay HUD
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3df82d52f42954a71b87c05ac338a690, type: 3}
 --- !u!224 &6609764479898507184 stripped
 RectTransform:
