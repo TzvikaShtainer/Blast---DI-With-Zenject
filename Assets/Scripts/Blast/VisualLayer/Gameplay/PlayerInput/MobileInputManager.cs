@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Blast.VisualLayer.Gameplay.PlayerInput
 {
-	public class MobileInputManager : MonoBehaviour
+	public class MobileInputManager : MonoBehaviour, IPlayerInput
 	{
 		#region Editor
 

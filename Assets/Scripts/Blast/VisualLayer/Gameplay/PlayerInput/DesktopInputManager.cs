@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Blast.VisualLayer.Gameplay.PlayerInput
 {
-	public class DesktopInputManager
+	public class DesktopInputManager : IPlayerInput
 	{
 		#region Consts
 

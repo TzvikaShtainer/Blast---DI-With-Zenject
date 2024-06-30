@@ -1,5 +1,7 @@
 using Blast.DataTypes;
+using Blast.VisualLayer.Gameplay.PlayerInput;
 using UnityEngine;
+using Zenject;
 
 namespace Blast.VisualLayer.Components
 {
@@ -40,12 +42,18 @@ namespace Blast.VisualLayer.Components
 		#endregion
 		
 		#region Injects
+
+		[Inject]
+		private IPlayerInput _input;
+		
 		#endregion
 		
 		#region Methods
 
 		private void Update()
 		{
+			SetRotation(_input.RotationInput);
+			RotateVisually();
 		}
 
 		private void RotateVisually()

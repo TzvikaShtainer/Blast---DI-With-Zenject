@@ -1,4 +1,5 @@
-﻿using Zenject;
+﻿using Blast.VisualLayer.Gameplay.PlayerInput;
+using Zenject;
 
 namespace Blast.VisualLayer.CannonStudio.Installers
 {
@@ -6,7 +7,10 @@ namespace Blast.VisualLayer.CannonStudio.Installers
     {
         public override void InstallBindings()
         {
-             
+            Container
+                .Bind<IPlayerInput>()
+                .To<DesktopInputManager>()
+                .AsSingle();
         }
     }
 }
