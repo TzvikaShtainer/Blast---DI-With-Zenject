@@ -1,4 +1,6 @@
-﻿using Blast.VisualLayer.CannonStudio.Handlers;
+﻿using Blast.VisualLayer.Cannons.Components;
+using Blast.VisualLayer.Cannons.Factories;
+using Blast.VisualLayer.CannonStudio.Handlers;
 using Blast.VisualLayer.Gameplay.Handlers;
 using Blast.VisualLayer.Gameplay.PlayerInput;
 using Zenject;
@@ -24,6 +26,10 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .Bind<IInitializable>()
                 .To<CannonStudioStartHandler>()
                 .AsSingle();
+
+            Container
+                .BindIFactory<PlayerCannon>()
+                .FromFactory<SimpleCannonFactory>();
         }
     }
 }
