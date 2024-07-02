@@ -19,6 +19,11 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .Bind<IHudBackClickHandler>()
                 .To<MockBackClickHandler>()
                 .AsSingle();
+
+            Container
+                .Bind<IInitializable>()
+                .To<CannonStudioStartHandler>()
+                .AsSingle();
         }
     }
 }
