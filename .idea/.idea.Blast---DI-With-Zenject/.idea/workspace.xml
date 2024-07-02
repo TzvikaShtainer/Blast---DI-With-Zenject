@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Gameplay UI Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Gameplay UI Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Development/Cannon Studio.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Development/Cannon Studio.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/PlayerInput/MobileInputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/PlayerInput/MobileInputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Handlers/IHudBackClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Handlers/IHudBackClickHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/UI/GameplayHudUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/UI/GameplayHudUi.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,8 @@
       <updated>1715004356046</updated>
       <workItem from="1715004359386" duration="84000" />
       <workItem from="1719642656055" duration="1222000" />
-      <workItem from="1719753831946" duration="5533000" />
+      <workItem from="1719753831946" duration="6030000" />
+      <workItem from="1719917387470" duration="349000" />
     </task>
     <servers />
   </component>

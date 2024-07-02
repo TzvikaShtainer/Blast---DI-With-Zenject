@@ -1,4 +1,6 @@
-﻿using Blast.VisualLayer.Gameplay.PlayerInput;
+﻿using Blast.VisualLayer.CannonStudio.Handlers;
+using Blast.VisualLayer.Gameplay.Handlers;
+using Blast.VisualLayer.Gameplay.PlayerInput;
 using Zenject;
 
 namespace Blast.VisualLayer.CannonStudio.Installers
@@ -12,6 +14,11 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .To<DesktopInputManager>()
                 .AsSingle()
                 .IfNotBound();
+
+            Container
+                .Bind<IHudBackClickHandler>()
+                .To<MockBackClickHandler>()
+                .AsSingle();
         }
     }
 }

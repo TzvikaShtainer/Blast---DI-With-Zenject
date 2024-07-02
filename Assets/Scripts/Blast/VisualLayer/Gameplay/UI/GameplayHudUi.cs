@@ -19,6 +19,10 @@ namespace Blast.VisualLayer.Gameplay.UI
         #endregion
         
         #region Injects
+
+        [Inject]
+        private IHudBackClickHandler _backClickHandler;
+        
         #endregion
 
         #region Methods
@@ -39,6 +43,7 @@ namespace Blast.VisualLayer.Gameplay.UI
 
         public async void OnBackButtonClick()
         {
+            _backClickHandler.Execute();
         }
 
         #endregion
