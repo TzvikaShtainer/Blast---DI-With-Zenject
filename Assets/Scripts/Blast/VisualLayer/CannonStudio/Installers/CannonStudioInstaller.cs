@@ -3,12 +3,19 @@ using Blast.VisualLayer.Cannons.Factories;
 using Blast.VisualLayer.CannonStudio.Handlers;
 using Blast.VisualLayer.Gameplay.Handlers;
 using Blast.VisualLayer.Gameplay.PlayerInput;
+using UnityEngine;
 using Zenject;
 
 namespace Blast.VisualLayer.CannonStudio.Installers
 {
     public class CannonStudioInstaller : MonoInstaller<CannonStudioInstaller>
     {
+        [SerializeField]
+        private Object _currentCannonPrefab;
+        
+        [SerializeField]
+        private Transform _cannonParentTrasform;
+        
         public override void InstallBindings()
         {
             Container
@@ -26,10 +33,22 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .Bind<IInitializable>()
                 .To<CannonStudioStartHandler>()
                 .AsSingle();
+            
+            Container
+                .Bind<Object>()
+                .FromInstance(_currentCannonPrefab)
+                .AsSingle();
+            
+            Container
+                .Bind<Transform>()
+                .FromInstance(_cannonParentTrasform)
+                .AsSingle();
 
             Container
-                .BindIFactory<PlayerCannon>()
+                .BindIFactory<Transform, PlayerCannon>()
                 .FromFactory<SimpleCannonFactory>();
+
+            
         }
     }
 }
