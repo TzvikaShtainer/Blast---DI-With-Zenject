@@ -6,15 +6,11 @@ namespace Blast.VisualLayer.CannonStudio.Installers
 {
     public class CannonStudioStartHandler : IInitializable
     {
-
         [Inject]
-        private IFactory<Transform, PlayerCannon> _playerCannon;
-
-        [Inject]
-        private Transform _cannonParentParam;
+        private PlayerCannon.Factory _factory;
         public void Initialize()
         {
-            var playerCannon = _playerCannon.Create(_cannonParentParam);
+            var cannon = _factory.Create();
         }
     }
 }

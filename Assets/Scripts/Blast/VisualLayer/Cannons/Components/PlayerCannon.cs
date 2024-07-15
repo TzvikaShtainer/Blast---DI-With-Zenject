@@ -7,6 +7,15 @@ namespace Blast.VisualLayer.Cannons.Components
 {
     public class PlayerCannon : MonoBehaviour
     {
+        #region Factory
+
+        public class Factory : PlaceholderFactory<PlayerCannon>
+        {
+            
+        }
+
+        #endregion
+        
         #region Injets
 
         #endregion

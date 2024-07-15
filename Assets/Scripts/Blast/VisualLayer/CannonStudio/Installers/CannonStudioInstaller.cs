@@ -1,4 +1,5 @@
-﻿using Blast.VisualLayer.Cannons.Components;
+﻿using Blast.ServiceLayer.Signals.Payloads;
+using Blast.VisualLayer.Cannons.Components;
 using Blast.VisualLayer.Cannons.Factories;
 using Blast.VisualLayer.CannonStudio.Handlers;
 using Blast.VisualLayer.Gameplay.Handlers;
@@ -38,17 +39,13 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .Bind<Object>()
                 .FromInstance(_currentCannonPrefab)
                 .AsSingle();
-            
+
+
             Container
-                .Bind<Transform>()
-                .FromInstance(_cannonParentTrasform)
+                .BindFactory<PlayerCannon, PlayerCannon.Factory>()
+                .FromComponentInNewPrefab(_currentCannonPrefab)
+                .UnderTransform(_cannonParentTrasform)
                 .AsSingle();
-
-            Container
-                .BindIFactory<Transform, PlayerCannon>()
-                .FromFactory<SimpleCannonFactory>();
-
-            
         }
     }
 }
