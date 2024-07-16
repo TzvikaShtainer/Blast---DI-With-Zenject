@@ -39,7 +39,7 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .Bind<Object>()
                 .FromInstance(_currentCannonPrefab)
                 .AsSingle();
-            
+             
             Container
                 .Bind<Transform>()
                 .FromInstance(_cannonParentTrasform)
