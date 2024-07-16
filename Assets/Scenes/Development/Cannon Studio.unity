@@ -925,9 +925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b173aa34c745c6b7a64e0cbae1713a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentCannonPrefab: {fileID: 1451160215310480, guid: 88dffcad53f143243b4b5e219003ba78,
-    type: 3}
   _cannonParentTrasform: {fileID: 1572105509}
+  _cannonToPlayWith: 0
 --- !u!1 &1643580040
 GameObject:
   m_ObjectHideFlags: 0

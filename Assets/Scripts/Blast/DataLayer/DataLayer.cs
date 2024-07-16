@@ -1,4 +1,5 @@
-﻿using Blast.DataLayer.Metadata;
+﻿using Blast.DataLayer.Balances;
+using Blast.DataLayer.Metadata;
 using Zenject;
 
 namespace Blast.DataLayer
@@ -7,5 +8,8 @@ namespace Blast.DataLayer
     {
         [Inject]
         public IGameMetadata Metadata { get; private set; }
+
+        [Inject]
+        public IPlayerBalances Balances { get; }
     }
 }

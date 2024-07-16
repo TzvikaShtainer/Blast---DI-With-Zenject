@@ -1,3 +1,4 @@
+using System;
 using Blast.DataLayer;
 using Blast.VisualLayer.Gameplay.Handlers;
 using TMPro;
@@ -22,6 +23,9 @@ namespace Blast.VisualLayer.Gameplay.UI
 
         [Inject]
         private IHudBackClickHandler _backClickHandler;
+
+        [Inject]
+        private IDataLayer _dataLayer;
         
         #endregion
 
@@ -32,13 +36,24 @@ namespace Blast.VisualLayer.Gameplay.UI
             InitializeView();
         }
 
+        private void OnDestroy()
+        {
+            _dataLayer.Balances.CoinsBalanceChange -= SyncUiWithData;
+            _dataLayer.Balances.GemsBalanceChange -= SyncUiWithData;
+        }
+
         private void InitializeView()
         {
+            _dataLayer.Balances.CoinsBalanceChange += SyncUiWithData;
+            _dataLayer.Balances.GemsBalanceChange += SyncUiWithData;
+            
             SyncUiWithData();
         }
 
         private void SyncUiWithData()
         {
+            _coinsBalanceText.text = _dataLayer.Balances.Coins.ToString();
+            _gemsBalanceText.text = _dataLayer.Balances.Gems.ToString();
         }
 
         public async void OnBackButtonClick()

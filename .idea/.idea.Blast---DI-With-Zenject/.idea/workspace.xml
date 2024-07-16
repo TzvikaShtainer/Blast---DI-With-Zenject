@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/DataLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/DataLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/IDataLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/IDataLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Installers/DataLayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Installers/DataLayerInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/UI/GameplayHudUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/UI/GameplayHudUi.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +101,7 @@
       <workItem from="1720683791568" duration="5271000" />
       <workItem from="1721041867445" duration="7387000" />
       <workItem from="1721112178808" duration="6031000" />
-      <workItem from="1721146527904" duration="628000" />
+      <workItem from="1721146527904" duration="2249000" />
     </task>
     <servers />
   </component>
@@ -122,26 +126,13 @@
           <line>14</line>
           <properties documentPath="C:\Blast---DI-With-Zenject\Assets\Scripts\Blast\VisualLayer\CannonStudio\Handlers\CannonStudioStartHandler.cs" containingFunctionPresentation="Method 'Initialize'">
             <startOffsets>
-              <option value="373" />
+              <option value="507" />
             </startOffsets>
             <endOffsets>
-              <option value="447" />
+              <option value="579" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Factories/CannonFactory.cs</url>
-          <line>24</line>
-          <properties documentPath="C:\Blast---DI-With-Zenject\Assets\Scripts\Blast\VisualLayer\Factories\CannonFactory.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="653" />
-            </startOffsets>
-            <endOffsets>
-              <option value="719" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

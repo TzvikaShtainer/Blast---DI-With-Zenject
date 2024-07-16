@@ -28,3 +28,6 @@ MonoBehaviour:
       type: 3}
     _cannonPreviewSprite: {fileID: 21300000, guid: a7aa8c21459624ac5888204af3452e72,
       type: 3}
+  _playerBalances:
+    _coins: 10
+    _gems: 20
