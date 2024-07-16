@@ -10,9 +10,15 @@ namespace Blast.VisualLayer.CannonStudio.Installers
     {
         [Inject] 
         private CannonFactory _cannonFactory;
+
+        [Inject] 
+        private Transform _cannonParent;
+        
+        [Inject] 
+        private PlayerCannonType _canonToPlay;
         public void Initialize()
         {
-            var cannonInstance = _cannonFactory.Create(PlayerCannonType.Bullet, null);
+            var cannonInstance = _cannonFactory.Create(_canonToPlay, _cannonParent);
         }
     }
 }

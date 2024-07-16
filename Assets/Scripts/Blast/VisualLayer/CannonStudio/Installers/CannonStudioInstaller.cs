@@ -14,10 +14,10 @@ namespace Blast.VisualLayer.CannonStudio.Installers
     public class CannonStudioInstaller : MonoInstaller<CannonStudioInstaller>
     {
         [SerializeField]
-        private Object _currentCannonPrefab;
-        
-        [SerializeField]
         private Transform _cannonParentTrasform;
+
+        [SerializeField]
+        private PlayerCannonType _cannonToPlayWith;
         
         public override void InstallBindings()
         {
@@ -27,6 +27,16 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .AsSingle()
                 .IfNotBound();
 
+            Container
+                .Bind<PlayerCannonType>()
+                .FromInstance(_cannonToPlayWith)
+                .AsSingle();
+            
+            Container
+                .Bind<Transform>()
+                .FromInstance(_cannonParentTrasform)
+                .AsSingle();
+            
             Container
                 .Bind<IHudBackClickHandler>()
                 .To<MockBackClickHandler>()
@@ -42,10 +52,7 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .FromInstance(_currentCannonPrefab)
                 .AsSingle();
              
-            Container
-                .Bind<Transform>()
-                .FromInstance(_cannonParentTrasform)
-                .AsSingle();
+            
 
             Container
                 .BindFactory<PlayerCannonType, Transform, GameObject, CannonFactory>()
