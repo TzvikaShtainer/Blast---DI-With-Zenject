@@ -10,7 +10,7 @@ namespace Blast.VisualLayer.CannonStudio.Installers
         private PlayerCannon.Factory _factory;
         public void Initialize()
         {
-            var cannon = _factory.Create();
+           var cannon = _factory.Create();
         }
     }
 }

@@ -39,8 +39,12 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .Bind<Object>()
                 .FromInstance(_currentCannonPrefab)
                 .AsSingle();
-
-
+            
+            Container
+                .Bind<Transform>()
+                .FromInstance(_cannonParentTrasform)
+                .AsSingle();
+            
             Container
                 .BindFactory<PlayerCannon, PlayerCannon.Factory>()
                 .FromComponentInNewPrefab(_currentCannonPrefab)

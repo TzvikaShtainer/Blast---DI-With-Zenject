@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioStartHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioStartHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Cannons/Components/PlayerCannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Cannons/Components/PlayerCannon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,7 @@
       <workItem from="1719753831946" duration="6030000" />
       <workItem from="1719917387470" duration="3196000" />
       <workItem from="1720683791568" duration="5271000" />
-      <workItem from="1721041867445" duration="6060000" />
+      <workItem from="1721041867445" duration="7387000" />
     </task>
     <servers />
   </component>
