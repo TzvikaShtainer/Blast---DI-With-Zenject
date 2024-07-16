@@ -46,13 +46,6 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .Bind<IInitializable>()
                 .To<CannonStudioEntryPoint>()
                 .AsSingle();
-            
-            Container
-                .Bind<Object>()
-                .FromInstance(_currentCannonPrefab)
-                .AsSingle();
-             
-            
 
             Container
                 .BindFactory<PlayerCannonType, Transform, GameObject, CannonFactory>()
