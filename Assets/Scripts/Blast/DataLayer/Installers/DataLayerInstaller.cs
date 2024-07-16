@@ -19,21 +19,30 @@ namespace Blast.DataLayer.Installers
         {
             Container
                 .Bind<IDataLayer>()
+                .FromSubContainerResolve()
+                .ByMethod(SubContainerBindings)
+                .AsSingle();
+        }
+
+        private void SubContainerBindings(DiContainer subContainer)
+        {
+            subContainer
+                .Bind<IDataLayer>()
                 .To<DataLayer>()
                 .AsSingle();
-
-            Container
+            
+            subContainer
                 .Bind<IPlayerBalances>()
                 .To<PlayerBalances>()
-                .FromInstance(_playerBalances)
+                .FromInstance(_playerBalances )
                 .AsSingle();
 
-            Container
+            subContainer
                 .Bind<IGameMetadata>()
                 .To<GameMetadata>()
                 .AsSingle();
 
-            Container
+            subContainer
                 .Bind<CannonMetadata[]>()
                 .FromInstance(_cannonMetadatas)
                 .AsSingle();
