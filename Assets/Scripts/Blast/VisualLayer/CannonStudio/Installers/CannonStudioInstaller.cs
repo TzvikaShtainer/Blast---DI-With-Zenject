@@ -1,7 +1,9 @@
-﻿using Blast.ServiceLayer.Signals.Payloads;
+﻿using Blast.DataTypes;
+using Blast.ServiceLayer.Signals.Payloads;
 using Blast.VisualLayer.Cannons.Components;
 using Blast.VisualLayer.Cannons.Factories;
 using Blast.VisualLayer.CannonStudio.Handlers;
+using Blast.VisualLayer.Factories;
 using Blast.VisualLayer.Gameplay.Handlers;
 using Blast.VisualLayer.Gameplay.PlayerInput;
 using UnityEngine;
@@ -32,7 +34,7 @@ namespace Blast.VisualLayer.CannonStudio.Installers
 
             Container
                 .Bind<IInitializable>()
-                .To<CannonStudioStartHandler>()
+                .To<CannonStudioEntryPoint>()
                 .AsSingle();
             
             Container
@@ -44,12 +46,12 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .Bind<Transform>()
                 .FromInstance(_cannonParentTrasform)
                 .AsSingle();
-            
+
             Container
-                .BindFactory<PlayerCannon, PlayerCannon.Factory>()
-                .FromComponentInNewPrefab(_currentCannonPrefab)
-                .UnderTransform(_cannonParentTrasform)
-                .AsSingle();
+                .BindFactory<PlayerCannonType, Transform, GameObject, CannonFactory>()
+                .FromFactory<CannonFactoryImplementation>();
+
+
         }
     }
 }

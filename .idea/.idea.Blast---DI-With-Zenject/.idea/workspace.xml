@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Handlers/CannonStudioEntryPoint.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Factories.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Factories/CannonFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Factories/CannonFactory.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Data Layer Installer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Data Layer Installer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/DataLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/DataLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/IDataLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/IDataLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Installers/DataLayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Installers/DataLayerInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/IGameMetadata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/IGameMetadata.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioStartHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioStartHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioStartHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Installers/CannonStudioStartHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Handlers/CannonStudioEntryPoint.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Cannons/Components/PlayerCannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Cannons/Components/PlayerCannon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +38,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -72,10 +84,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17028">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="17028" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -97,6 +109,8 @@
       <workItem from="1719917387470" duration="3196000" />
       <workItem from="1720683791568" duration="5271000" />
       <workItem from="1721041867445" duration="7387000" />
+      <workItem from="1721112178808" duration="6031000" />
+      <workItem from="1721146527904" duration="314000" />
     </task>
     <servers />
   </component>
@@ -112,5 +126,37 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Handlers/CannonStudioEntryPoint.cs</url>
+          <line>14</line>
+          <properties documentPath="C:\Blast---DI-With-Zenject\Assets\Scripts\Blast\VisualLayer\CannonStudio\Handlers\CannonStudioStartHandler.cs" containingFunctionPresentation="Method 'Initialize'">
+            <startOffsets>
+              <option value="373" />
+            </startOffsets>
+            <endOffsets>
+              <option value="447" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Factories/CannonFactory.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Blast---DI-With-Zenject\Assets\Scripts\Blast\VisualLayer\Factories\CannonFactory.cs" containingFunctionPresentation="Method 'Create'">
+            <startOffsets>
+              <option value="636" />
+            </startOffsets>
+            <endOffsets>
+              <option value="702" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

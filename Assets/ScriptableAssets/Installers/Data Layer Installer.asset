@@ -12,3 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e0c2fc819f4497b12d11dd5d64ef2a, type: 3}
   m_Name: Data Layer Installer
   m_EditorClassIdentifier: 
+  _cannonMetadatas:
+  - _cannonType: 0
+    _cannonPrefabRef: {fileID: 1451160215310480, guid: 88dffcad53f143243b4b5e219003ba78,
+      type: 3}
+    _cannonPreviewSprite: {fileID: 21300000, guid: 129174f1889ae4fb29671a9d6508eb4c,
+      type: 3}
+  - _cannonType: 1
+    _cannonPrefabRef: {fileID: 1601447511946750, guid: 2e3ec03c884afb84d94ac63eba3dcf96,
+      type: 3}
+    _cannonPreviewSprite: {fileID: 21300000, guid: 7ab7c6d9d45e9488f80d59d2fce0a817,
+      type: 3}
+  - _cannonType: 2
+    _cannonPrefabRef: {fileID: 1771379674837074, guid: b655a1227e76c114e8a2fc8090ff0065,
+      type: 3}
+    _cannonPreviewSprite: {fileID: 21300000, guid: a7aa8c21459624ac5888204af3452e72,
+      type: 3}
