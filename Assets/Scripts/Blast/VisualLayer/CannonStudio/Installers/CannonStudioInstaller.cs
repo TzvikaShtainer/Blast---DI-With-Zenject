@@ -48,7 +48,7 @@ namespace Blast.VisualLayer.CannonStudio.Installers
                 .AsSingle();
 
             Container
-                .BindFactory<PlayerCannonType, Transform, GameObject, CannonFactory>()
+                .BindFactory<PlayerCannonType, Transform, GameObject, CannonFactory>() //signature, Factory
                 .FromFactory<CannonFactoryImplementation>();
 
 

@@ -926,7 +926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cannonParentTrasform: {fileID: 1572105509}
-  _cannonToPlayWith: 0
+  _cannonToPlayWith: 2
 --- !u!1 &1643580040
 GameObject:
   m_ObjectHideFlags: 0

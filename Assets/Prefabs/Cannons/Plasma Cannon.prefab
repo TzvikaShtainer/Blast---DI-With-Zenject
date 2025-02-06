@@ -44091,6 +44091,7 @@ GameObject:
   - component: {fileID: 95215450363608042}
   - component: {fileID: 5744943816917742264}
   - component: {fileID: 4273913822360167016}
+  - component: {fileID: -7658381187219492707}
   m_Layer: 6
   m_Name: Plasma Cannon
   m_TagString: Untagged
@@ -44169,6 +44170,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damageable: {fileID: 0}
+--- !u!114 &-7658381187219492707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771379674837074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5539948c44ee49b9aa1c34ed550273f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotationPivot: {fileID: 4172831886660696}
+  _rotation: 0
+  _speed: 5
+  _maxRotationAndle: 40
+  _cannonRotationAxis: 0
 --- !u!1 &1833434956417576
 GameObject:
   m_ObjectHideFlags: 0
