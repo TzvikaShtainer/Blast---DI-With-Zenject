@@ -11,12 +11,19 @@ namespace Blast.VisualLayer.Enemies.Spawners
 	{
 		#region Injects
 
+		[Inject]
+		private EnemyTurret.Factory _factory;
+		
 		#endregion
+		
+		private EnemyTurret _currentTurret;
+		
 
 		#region Methods
 
 		public void BeginSpawning()
 		{
+			_currentTurret = _factory.Create();
 		}
 
 		public void StopSpawning()

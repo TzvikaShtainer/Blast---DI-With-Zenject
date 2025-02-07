@@ -1,5 +1,6 @@
 using Blast.VisualLayer.Components;
 using UnityEngine;
+using Zenject;
 
 namespace Blast.VisualLayer.Enemies.Components
 {
@@ -7,6 +8,11 @@ namespace Blast.VisualLayer.Enemies.Components
 	public class EnemyTurret : MonoBehaviour
 	{
 		#region Factories
+
+		public class Factory : PlaceholderFactory<EnemyTurret>
+		{
+		}
+		
 		#endregion
 		
 		#region Editor

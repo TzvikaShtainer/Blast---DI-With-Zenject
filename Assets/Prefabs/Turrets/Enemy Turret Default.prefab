@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 939335179}
   - component: {fileID: 3444703990568912619}
   - component: {fileID: 7951015138128532286}
+  - component: {fileID: 7385108455376034536}
   m_Layer: 8
   m_Name: Enemy Turret Default
   m_TagString: Untagged
@@ -42,9 +43,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939335178}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 2.023832, y: 1.700516, z: 1.9070787}
   m_Center: {x: -0.008981109, y: 0.82625043, z: 0.022452563}
 --- !u!114 &7951015138128532286
@@ -61,6 +70,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rotationSpeed: 10
   _lockAnglePrecision: 5
+--- !u!114 &7385108455376034536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939335178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75cf0bf21ed24530a126fa7ec13dbada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 100
+  _explosionEffectPrefabRef: {fileID: 748436985767163780, guid: b206b3bc70c8d43e48b7da521370c874,
+    type: 3}
 --- !u!1 &952783352
 GameObject:
   m_ObjectHideFlags: 0
