@@ -7,7 +7,7 @@ using Zenject;
 
 namespace Blast.VisualLayer.Enemies.Spawners
 {
-	public class EnemyTurretSpawner : MonoBehaviour
+	public class EnemyTurretSpawner : MonoBehaviour, IEnemySpawner
 	{
 		#region Injects
 

@@ -20,7 +20,7 @@ namespace Blast.VisualLayer.CannonStudio.Installers
         private PlayerCannonType _canonToPlay;
 
         [Inject]  
-        private List<EnemyTurretSpawner> _enemySpawners;
+        private List<IEnemySpawner> _enemySpawners;
         
         public void Initialize()
         {
