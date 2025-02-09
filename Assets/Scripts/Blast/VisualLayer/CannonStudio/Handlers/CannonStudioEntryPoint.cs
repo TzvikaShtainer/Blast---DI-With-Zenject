@@ -28,7 +28,7 @@ namespace Blast.VisualLayer.CannonStudio.Installers
 
             foreach (var enemySpawner in _enemySpawners)
             {
-                enemySpawner.BeginSpawning();
+                enemySpawner.BeginSpawning(cannonInstance);
             }
         }
     }

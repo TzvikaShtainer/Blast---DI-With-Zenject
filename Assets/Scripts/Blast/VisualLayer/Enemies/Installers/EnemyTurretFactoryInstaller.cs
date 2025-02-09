@@ -1,4 +1,5 @@
-﻿using Blast.VisualLayer.Enemies.Components;
+﻿using Blast.VisualLayer.Cannons.Components;
+using Blast.VisualLayer.Enemies.Components;
 using UnityEngine;
 using Zenject;
 
@@ -15,7 +16,7 @@ namespace Blast.VisualLayer.Enemies.Installers
         public override void InstallBindings()
         {
             Container
-                .BindFactory<EnemyTurret, EnemyTurret.Factory>()
+                .BindFactory<IEnemyTarget, EnemyTurret, EnemyTurret.Factory>()
                 .FromComponentInNewPrefab(_turretPrefabRef) // Create a new game object at the root of the scene using the given prefab
                                                             // After zenject creates a new GameObject from the given prefab, it will
                                                             // search the prefab for a component of type 'Foo' and return that

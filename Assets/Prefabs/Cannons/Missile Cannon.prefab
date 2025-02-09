@@ -15275,6 +15275,7 @@ GameObject:
   - component: {fileID: 8783732717780981400}
   - component: {fileID: 7767359082291987}
   - component: {fileID: 9035986535267996000}
+  - component: {fileID: 7453591227241277773}
   m_Layer: 6
   m_Name: Missile Cannon
   m_TagString: Untagged
@@ -15370,6 +15371,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damageable: {fileID: 0}
+--- !u!114 &7453591227241277773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601447511946750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5ae9591e9c740ae8695fa1d29f1c61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1684540617289302
 GameObject:
   m_ObjectHideFlags: 0

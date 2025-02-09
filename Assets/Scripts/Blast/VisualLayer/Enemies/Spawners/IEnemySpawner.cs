@@ -1,8 +1,10 @@
-﻿namespace Blast.VisualLayer.Enemies.Spawners
+﻿using Blast.VisualLayer.Cannons.Components;
+
+namespace Blast.VisualLayer.Enemies.Spawners
 {
     public interface IEnemySpawner
     {
-        void BeginSpawning();
+        void BeginSpawning(IEnemyTarget target);
         
         void StopSpawning();
     }

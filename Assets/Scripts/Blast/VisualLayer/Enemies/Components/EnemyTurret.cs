@@ -1,3 +1,4 @@
+using Blast.VisualLayer.Cannons.Components;
 using Blast.VisualLayer.Components;
 using UnityEngine;
 using Zenject;
@@ -9,7 +10,7 @@ namespace Blast.VisualLayer.Enemies.Components
 	{
 		#region Factories
 
-		public class Factory : PlaceholderFactory<EnemyTurret>
+		public class Factory : PlaceholderFactory<IEnemyTarget, EnemyTurret>
 		{
 		}
 		
@@ -34,11 +35,19 @@ namespace Blast.VisualLayer.Enemies.Components
 		private Damageable _damageable;
 		
 		private bool _prevFrameIsLockOnTarget;
+
+		private IEnemyTarget _target;
 		
 		#endregion
 		
 		#region Methods
 
+		[Inject]
+		public void Construct(IEnemyTarget target)
+		{
+			_target = target;
+		}
+		
 		private void OnGameEnd()
 		{
 			//_weaponTrigger.enabled = false;
