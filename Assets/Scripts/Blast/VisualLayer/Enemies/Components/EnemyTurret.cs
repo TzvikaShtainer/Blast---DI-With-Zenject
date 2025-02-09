@@ -89,29 +89,24 @@ namespace Blast.VisualLayer.Enemies.Components
 
 		private void HandleLookOnTarget()
 		{
-			// TODO: Implement IEnemyTarged
-			// SmoothLookOnTarget();
-			// var isLockedOnTargetNow = GetIsLockedOnTargetNow();
-			
-			// TODO: Implement weapon trigger lock/unlock
-			
-			// _prevFrameIsLockOnTarget = isLockedOnTargetNow;
+			SmoothLookOnTarget();
+			var isLockedOnTargetNow = GetIsLockedOnTargetNow();
+			_prevFrameIsLockOnTarget = isLockedOnTargetNow;
 		}
-
-		// TODO: Implement IEnemyTarget
-		// private void SmoothLookOnTarget()
-		// {
-		// 	var direction = (_target.CurrentPosition - transform.position).normalized;
-		// 	var targetRotation = Quaternion.LookRotation(direction);
-		// 	transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
-		// }
 		
-		// private bool GetIsLockedOnTargetNow()
-		// {
-		// 	var direction = (_target.CurrentPosition - transform.position).normalized;
-		// 	var targetRotation = Quaternion.LookRotation(direction);
-		// 	return Quaternion.Angle(transform.rotation, targetRotation) <= _lockAnglePrecision;
-		// }
+		 private void SmoothLookOnTarget()
+		 {
+		 	var direction = (_target.CurrentPosition - transform.position).normalized;
+		 	var targetRotation = Quaternion.LookRotation(direction);
+		 	transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
+		 }
+		
+		 private bool GetIsLockedOnTargetNow()
+		 {
+		 	var direction = (_target.CurrentPosition - transform.position).normalized;
+		 	var targetRotation = Quaternion.LookRotation(direction);
+		 	return Quaternion.Angle(transform.rotation, targetRotation) <= _lockAnglePrecision;
+		 }
 		
 		#endregion
 	}
