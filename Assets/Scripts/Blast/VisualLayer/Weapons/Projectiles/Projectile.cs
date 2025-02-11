@@ -7,6 +7,12 @@ namespace Blast.VisualLayer.Weapons.Projectiles
 	public class Projectile : MonoBehaviour
 	{
 		#region Factory
+		
+		public class Factory : PlaceholderFactory<Vector3, Vector3, Projectile>
+		{
+			
+		}
+		
 		#endregion
 
 		#region Editor
@@ -17,6 +23,13 @@ namespace Blast.VisualLayer.Weapons.Projectiles
 		#endregion
 		
 		#region Injections
+
+		[Inject(Id = WeaponsBindingIds.MuzzleFlashVfxPrefabRef)] 
+		private GameObject _muzzleFlashVfxPrefabRef;
+		
+		[Inject(Id = WeaponsBindingIds.MuzzleFlashVfxPrefabRef)]  
+		private GameObject _collisionVfxPrefabRef;
+		
 		#endregion
 		
 		#region Fields
@@ -36,9 +49,11 @@ namespace Blast.VisualLayer.Weapons.Projectiles
 		#region Methods
 
 		[Inject]
-		private void Construct(Vector3 launchingPosition)
+		private void Construct(Vector3 launchingPosition, Vector3 direction)
 		{
 			_launchingPosition = launchingPosition;
+			_directionRotation = Quaternion.LookRotation(direction);
+			transform.SetPositionAndRotation(_launchingPosition, _directionRotation);
 		}
 
 		public void Fire(Vector3 direction, float speed, float maxDistance, int damage)
@@ -75,13 +90,13 @@ namespace Blast.VisualLayer.Weapons.Projectiles
 
 		private void PlayMuzzleEffect(Vector3 effectPosition, Quaternion effectRotation)
 		{
-			// TODO: Instantiate muzzle flash
+			Instantiate(_muzzleFlashVfxPrefabRef, effectPosition, effectRotation);
 		}
 
 		private void PlayCollisionEffectAt(ContactPoint contactPoint)
 		{
 			var hitPoint = contactPoint;
-			// TODO: Instantiate explosion flash
+			Instantiate(_collisionVfxPrefabRef, hitPoint.point, Quaternion.LookRotation(hitPoint.normal));
 		}
 
 		#endregion

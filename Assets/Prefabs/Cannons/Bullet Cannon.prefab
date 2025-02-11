@@ -5136,6 +5136,7 @@ GameObject:
   - component: {fileID: 8581507070013644247}
   - component: {fileID: 8335546051300328884}
   - component: {fileID: -748690925516611525}
+  - component: {fileID: 3854118122513314553}
   m_Layer: 6
   m_Name: Bullet Cannon
   m_TagString: Untagged
@@ -5243,6 +5244,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ae9591e9c740ae8695fa1d29f1c61d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3854118122513314553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451160215310480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08eca9f7688a0a24685b89133b020c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scriptableObjectInstallers:
+  - {fileID: 11400000, guid: c0a03a579b0f52747b1f286e7ba564de, type: 2}
+  _monoInstallers: []
+  _installerPrefabs: []
+  _autoRun: 1
+  _kernel: {fileID: 0}
 --- !u!1 &1465221733708708
 GameObject:
   m_ObjectHideFlags: 0
