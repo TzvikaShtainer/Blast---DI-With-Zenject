@@ -8,6 +8,10 @@ namespace Blast.VisualLayer.Components
 	public class AutomaticWeaponTrigger : MonoBehaviour
 	{
 		#region Injects
+
+		[Inject]
+		private IWeaponLogic _weaponLogic;
+		
 		#endregion
 
 		#region Editor
@@ -46,7 +50,9 @@ namespace Blast.VisualLayer.Components
 			{
 				return;
 			}
-			// TODO: Trigger
+			
+			_weaponLogic.Fire(_launchingPoints);
+			
 			_lastTimeFired = Time.time;
 			_currentDelay = Random.Range(_triggerDelayMin, _triggerDelayMax);
 		}

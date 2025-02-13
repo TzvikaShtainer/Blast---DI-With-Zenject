@@ -44094,6 +44094,7 @@ GameObject:
   - component: {fileID: -7658381187219492707}
   - component: {fileID: 8544131010356893130}
   - component: {fileID: -2062913722998431432}
+  - component: {fileID: -3128194949869022056}
   m_Layer: 6
   m_Name: Plasma Cannon
   m_TagString: Untagged
@@ -44215,10 +44216,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scriptableObjectInstallers:
   - {fileID: 11400000, guid: 53e57cc1f0825d34a96e067f70e15575, type: 2}
+  - {fileID: 11400000, guid: 945055ff032bd7f428ef66442769a9c2, type: 2}
   _monoInstallers: []
   _installerPrefabs: []
   _autoRun: 1
   _kernel: {fileID: 0}
+--- !u!114 &-3128194949869022056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771379674837074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20fda3e6f4bc49249218ff082356d3ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onFire:
+    m_PersistentCalls:
+      m_Calls: []
+  _launchingPoints:
+  - {fileID: 4912929719774974865}
 --- !u!1 &1833434956417576
 GameObject:
   m_ObjectHideFlags: 0

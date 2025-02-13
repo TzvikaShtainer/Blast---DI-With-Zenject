@@ -56,13 +56,11 @@ namespace Blast.VisualLayer.Weapons.Projectiles
 			transform.SetPositionAndRotation(_launchingPosition, _directionRotation);
 		}
 
-		public void Fire(Vector3 direction, float speed, float maxDistance, int damage)
+		public void Fire(float speed, float maxDistance, int damage)
 		{
 			_speed = speed;
 			_maxDistance = maxDistance;
 			_damage = damage;
-			_directionRotation = Quaternion.LookRotation(direction);
-			transform.SetPositionAndRotation(_launchingPosition, _directionRotation);
 			PlayMuzzleEffect(_launchingPosition, _directionRotation);
 			_rb.velocity = transform.forward * _speed;
 		}
