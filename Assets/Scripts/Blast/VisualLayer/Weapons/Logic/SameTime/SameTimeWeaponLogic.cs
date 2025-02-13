@@ -12,6 +12,8 @@ namespace Blast.VisualLayer.Weapons.Logic.SameTime
 
         [Inject]
         private WeaponLogicParams _weaponParams;
+
+        private float _lastTimeFire;
         
         public void Fire(Transform[] launchingPoints)
         {
@@ -20,11 +22,19 @@ namespace Blast.VisualLayer.Weapons.Logic.SameTime
                 return;
             }
 
+            var isInDelay = Time.time - _lastTimeFire < _weaponParams.LaunchDelay;
+            if (isInDelay)
+            {
+                return;
+            }
+            
             foreach (var launchingPoint in launchingPoints)
             {
                 var projectile = _projectileFactory.Create(launchingPoint.position, launchingPoint.forward);
                 projectile.Fire(_weaponParams.ProjectileSpeed, _weaponParams.ProjectileMaxDistance, _weaponParams.Damage);
             }
+            
+            _lastTimeFire = Time.time;
         }
     }
 }

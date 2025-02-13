@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Logic/IWeaponLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Logic/IWeaponLogic.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Logic/SameTime.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Logic/SameTime/SameTimeWeaponLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Logic/SameTime/SameTimeWeaponLogic.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Logic/SameTime/SameTimeWeaponLogicInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Logic/SameTime/SameTimeWeaponLogicInstaller.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Bullet Cannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Bullet Cannon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Missile Cannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Missile Cannon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Plasma Cannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Plasma Cannon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Projectiles.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Projectiles/Antimatter Projectile Visuals.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Projectiles/Antimatter Projectile Visuals.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Projectiles/Arrow Projectile Visuals.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Projectiles/Arrow Projectile Visuals.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Projectiles/Bullet Projectile Visuals.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Projectiles/Bullet Projectile Visuals.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Components/AutomaticWeaponTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Components/AutomaticWeaponTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Components/InputDrivenWeaponTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Components/InputDrivenWeaponTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Projectiles/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Projectiles/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Logic/SameTime/SameTimeWeaponLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Logic/SameTime/SameTimeWeaponLogic.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,13 +72,15 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="26460">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="26460" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -133,7 +116,7 @@
       <workItem from="1739254742242" duration="8091000" />
       <workItem from="1739339071025" duration="220000" />
       <workItem from="1739339438036" duration="2629000" />
-      <workItem from="1739428701194" duration="2400000" />
+      <workItem from="1739428701194" duration="2727000" />
     </task>
     <servers />
   </component>
@@ -178,6 +161,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Logic/SameTime/SameTimeWeaponLogic.cs</url>
+          <line>24</line>
+          <properties documentPath="C:\Blast---DI-With-Zenject\Assets\Scripts\Blast\VisualLayer\Weapons\Logic\SameTime\SameTimeWeaponLogic.cs" containingFunctionPresentation="Method 'Fire'">
+            <startOffsets>
+              <option value="592" />
+            </startOffsets>
+            <endOffsets>
+              <option value="662" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
