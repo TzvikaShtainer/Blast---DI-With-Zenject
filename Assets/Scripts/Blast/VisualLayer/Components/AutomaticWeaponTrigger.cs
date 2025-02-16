@@ -51,7 +51,7 @@ namespace Blast.VisualLayer.Components
 				return;
 			}
 			
-			_weaponLogic.Fire(_launchingPoints);
+			_weaponLogic.Fire();
 			
 			_lastTimeFired = Time.time;
 			_currentDelay = Random.Range(_triggerDelayMin, _triggerDelayMax);

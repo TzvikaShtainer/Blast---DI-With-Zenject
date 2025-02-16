@@ -12,9 +12,6 @@ namespace Blast.VisualLayer.Components
 
 		[SerializeField]
 		private UnityEvent _onFire;
-
-		[SerializeField]
-		private Transform[] _launchingPoints;
 		
 		#endregion
 
@@ -45,7 +42,7 @@ namespace Blast.VisualLayer.Components
 
 		private void Fire()
 		{
-			_weaponLogic.Fire(_launchingPoints);
+			_weaponLogic.Fire();
 		}
 
 		#endregion

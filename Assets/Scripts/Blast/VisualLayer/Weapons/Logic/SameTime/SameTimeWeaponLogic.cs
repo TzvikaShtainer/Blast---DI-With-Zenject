@@ -1,4 +1,5 @@
 ﻿using System;
+using Blast.VisualLayer.Components;
 using Blast.VisualLayer.Weapons.Projectiles;
 using UnityEngine;
 using Zenject;
@@ -13,11 +14,14 @@ namespace Blast.VisualLayer.Weapons.Logic.SameTime
         [Inject]
         private WeaponLogicParams _weaponParams;
 
+        [Inject]
+        ILaunchingPointsProvider _launchingPointsProvider;
+        
         private float _lastTimeFire;
         
-        public void Fire(Transform[] launchingPoints)
+        public void Fire()
         {
-            if (launchingPoints == null || launchingPoints.Length <= 0)
+            if (_launchingPointsProvider == null || _launchingPointsProvider.LaunchingPoints.Length <= 0)
             {
                 return;
             }
@@ -28,7 +32,7 @@ namespace Blast.VisualLayer.Weapons.Logic.SameTime
                 return;
             }
             
-            foreach (var launchingPoint in launchingPoints)
+            foreach (var launchingPoint in _launchingPointsProvider.LaunchingPoints)
             {
                 var projectile = _projectileFactory.Create(launchingPoint.position, launchingPoint.forward);
                 projectile.Fire(_weaponParams.ProjectileSpeed, _weaponParams.ProjectileMaxDistance, _weaponParams.Damage);
