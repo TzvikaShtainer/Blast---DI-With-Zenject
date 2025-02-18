@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/ServiceLayer/Signals/Installers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/ServiceLayer/Signals/Installers/GameplaySignalsInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/ServiceLayer/Signals/Installers/GameplaySignalsInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Score/GameScoreCalculatorInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Score/GameScoreCalculatorInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Score/SignalBasedGameScoreCalculator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Bullet Cannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Bullet Cannon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Missile Cannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Missile Cannon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Plasma Cannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cannons/Plasma Cannon.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Development/Cannon Studio.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Development/Cannon Studio.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Weapons/Logic/Same Time Logic Installer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Weapons/Logic/Same Time Logic Installer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Cannons/Components/PlayerCannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Cannons/Components/PlayerCannon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Components/AutomaticWeaponTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Components/AutomaticWeaponTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Components/InputDrivenWeaponTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Components/InputDrivenWeaponTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Enemies/Components/EnemyTurret.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Enemies/Components/EnemyTurret.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Score/GameScoreCalculator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Score/GameScoreCalculator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Score/SignalBasedGameScoreCalculator.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +131,8 @@
       <workItem from="1739339071025" duration="220000" />
       <workItem from="1739339438036" duration="2629000" />
       <workItem from="1739428701194" duration="5352000" />
-      <workItem from="1739683303321" duration="1659000" />
+      <workItem from="1739683303321" duration="9489000" />
+      <workItem from="1739856400897" duration="5574000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,7 @@ using Blast.VisualLayer.Gameplay.PlayerInput;
 using Blast.VisualLayer.Weapons.Logic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 using Zenject;
 
 namespace Blast.VisualLayer.Components
@@ -9,9 +10,8 @@ namespace Blast.VisualLayer.Components
 	public class InputDrivenWeaponTrigger : MonoBehaviour
 	{
 		#region Editor
-
-		[SerializeField]
-		private UnityEvent _onFire;
+		
+		public UnityEvent OnFire;
 		
 		#endregion
 
@@ -43,6 +43,7 @@ namespace Blast.VisualLayer.Components
 		private void Fire()
 		{
 			_weaponLogic.Fire();
+			OnFire?.Invoke();
 		}
 
 		#endregion

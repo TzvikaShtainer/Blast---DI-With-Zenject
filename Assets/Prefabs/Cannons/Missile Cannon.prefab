@@ -15280,6 +15280,7 @@ GameObject:
   - component: {fileID: -5016518872466574762}
   - component: {fileID: 6046152525952594035}
   - component: {fileID: 3035967059907248318}
+  - component: {fileID: 4720012450919863782}
   m_Layer: 6
   m_Name: Missile Cannon
   m_TagString: Untagged
@@ -15374,7 +15375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5742dcae3b3e483d94ee0ef9c6f895b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damageable: {fileID: 0}
+  _damageable: {fileID: 4720012450919863782}
+  _weaponTrigger: {fileID: -5016518872466574762}
 --- !u!114 &7453591227241277773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15418,7 +15420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fda3e6f4bc49249218ff082356d3ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _onFire:
+  OnFire:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &6046152525952594035
@@ -15454,6 +15456,21 @@ MonoBehaviour:
   _useSceneContext: 0
   _context: {fileID: 7711735019804006857}
   _bindType: 1
+--- !u!114 &4720012450919863782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601447511946750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75cf0bf21ed24530a126fa7ec13dbada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 100
+  _explosionEffectPrefabRef: {fileID: 748436985767163780, guid: b206b3bc70c8d43e48b7da521370c874,
+    type: 3}
 --- !u!1 &1684540617289302
 GameObject:
   m_ObjectHideFlags: 0

@@ -5140,6 +5140,7 @@ GameObject:
   - component: {fileID: -3154272030818746182}
   - component: {fileID: -6914150996588431922}
   - component: {fileID: -4875162460334122473}
+  - component: {fileID: -2017804948408467657}
   m_Layer: 6
   m_Name: Bullet Cannon
   m_TagString: Untagged
@@ -5234,7 +5235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5742dcae3b3e483d94ee0ef9c6f895b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damageable: {fileID: 0}
+  _damageable: {fileID: -2017804948408467657}
+  _weaponTrigger: {fileID: -3154272030818746182}
 --- !u!114 &-748690925516611525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5278,7 +5280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fda3e6f4bc49249218ff082356d3ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _onFire:
+  OnFire:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &-6914150996588431922
@@ -5314,6 +5316,21 @@ MonoBehaviour:
   _launchingPoints:
   - {fileID: 1022165654960006943}
   - {fileID: 5146377865728970149}
+--- !u!114 &-2017804948408467657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451160215310480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75cf0bf21ed24530a126fa7ec13dbada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 100
+  _explosionEffectPrefabRef: {fileID: 748436985767163780, guid: b206b3bc70c8d43e48b7da521370c874,
+    type: 3}
 --- !u!1 &1465221733708708
 GameObject:
   m_ObjectHideFlags: 0

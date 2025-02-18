@@ -9,12 +9,18 @@ namespace Blast.VisualLayer.Cannons.Components
     {
         #region Injets
 
+        [Inject] 
+        private SignalBus _signalBus;
+        
         #endregion
         
         #region Editor
 
         [SerializeField]
         private Damageable _damageable;
+        
+        [SerializeField]
+        private InputDrivenWeaponTrigger _weaponTrigger;
 
         #endregion
         
@@ -28,6 +34,13 @@ namespace Blast.VisualLayer.Cannons.Components
             }
 
             enabled = _damageable != null;
+            
+            _weaponTrigger.OnFire.AddListener(OnWeaponFire);
+        }
+
+        private void OnWeaponFire()
+        {
+            _signalBus.Fire<PlayerCannonFired>();
         }
 
         private void Start()

@@ -1,3 +1,4 @@
+using Blast.ServiceLayer.Signals.Payloads;
 using Blast.VisualLayer.Weapons.Logic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -11,6 +12,9 @@ namespace Blast.VisualLayer.Components
 
 		[Inject]
 		private IWeaponLogic _weaponLogic;
+		
+		[Inject]
+		private SignalBus _signalBus;
 		
 		#endregion
 
@@ -52,6 +56,7 @@ namespace Blast.VisualLayer.Components
 			}
 			
 			_weaponLogic.Fire();
+			_signalBus.Fire<EnemyTurretFired>();
 			
 			_lastTimeFired = Time.time;
 			_currentDelay = Random.Range(_triggerDelayMin, _triggerDelayMax);

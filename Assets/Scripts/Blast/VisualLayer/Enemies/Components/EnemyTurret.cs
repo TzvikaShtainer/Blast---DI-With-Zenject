@@ -1,3 +1,4 @@
+using Blast.ServiceLayer.Signals.Payloads;
 using Blast.VisualLayer.Cannons.Components;
 using Blast.VisualLayer.Components;
 using UnityEngine;
@@ -39,6 +40,14 @@ namespace Blast.VisualLayer.Enemies.Components
 		private IEnemyTarget _target;
 		
 		#endregion
+
+		#region Injects
+
+		[Inject]
+		private SignalBus _signalBus;
+		
+
+		#endregion
 		
 		#region Methods
 
@@ -79,7 +88,7 @@ namespace Blast.VisualLayer.Enemies.Components
 
 		private void OnDestroyed()
 		{
-			// TODO: Raise notification EnemyTurretDestroyed
+			_signalBus.Fire<EnemyTurretDestroyed>();
 		}
 
 		private void Update()
