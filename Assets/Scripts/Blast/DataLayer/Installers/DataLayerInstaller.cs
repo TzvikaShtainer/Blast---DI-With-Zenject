@@ -11,6 +11,9 @@ namespace Blast.DataLayer.Installers
     {
         [SerializeField] 
         private CannonMetadata[] _cannonMetadatas;
+        
+        [SerializeField]
+        private GameLevelMetadata[] _levelsMetadata;
 
         [SerializeField] 
         private PlayerBalances _playerBalances;
@@ -46,6 +49,11 @@ namespace Blast.DataLayer.Installers
                 .Bind<CannonMetadata[]>()
                 .FromInstance(_cannonMetadatas)
                 .AsSingle();
+
+            subContainer
+                .Bind<GameLevelMetadata[]>()
+                .FromInstance(_levelsMetadata)
+                .AsCached();
         }
     }
 }
