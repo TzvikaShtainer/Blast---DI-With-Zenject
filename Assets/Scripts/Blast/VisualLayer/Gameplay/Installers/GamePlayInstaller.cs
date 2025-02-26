@@ -36,7 +36,7 @@ namespace Blast.VisualLayer.Gameplay.Installers
             
             Container
                 .Bind<IHudBackClickHandler>()
-                .To<MockBackClickHandler>()
+                .To<HudBackButtonHandler>()
                 .AsSingle();
             
             Container

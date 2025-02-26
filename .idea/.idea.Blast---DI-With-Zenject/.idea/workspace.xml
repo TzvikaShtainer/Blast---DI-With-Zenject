@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Handlers/GamePlayLevelEntryPoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Handlers/GamePlayLevelEntryPoint.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Installers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Installers/GamePlayInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Installers/GamePlayInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Handlers/HudBackButtonHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Handlers/HudBackButtonHandler.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/Desert.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/Desert.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/IDataLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/IDataLayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Installers/DataLayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Installers/DataLayerInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/IGameMetadata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/IGameMetadata.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Loader.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Loader.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Installers/GamePlayInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Installers/GamePlayInstaller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,13 +80,15 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="2704">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="2704" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -135,7 +133,11 @@
       <workItem from="1739886635704" duration="1417000" />
       <workItem from="1739945785143" duration="1648000" />
       <workItem from="1739956970427" duration="76000" />
-      <workItem from="1740028683895" duration="4180000" />
+      <workItem from="1740028683895" duration="4774000" />
+      <workItem from="1740121440361" duration="13627000" />
+      <workItem from="1740212378338" duration="9597000" />
+      <workItem from="1740375056684" duration="2665000" />
+      <workItem from="1740548033943" duration="3156000" />
     </task>
     <servers />
   </component>
@@ -151,6 +153,38 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/UI/GameplayHudUi.cs</url>
+          <line>40</line>
+          <properties documentPath="C:\Blast---DI-With-Zenject\Assets\Scripts\Blast\VisualLayer\Gameplay\UI\GameplayHudUi.cs" containingFunctionPresentation="Method 'OnDestroy'">
+            <startOffsets>
+              <option value="780" />
+            </startOffsets>
+            <endOffsets>
+              <option value="837" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/UI/GameplayHudUi.cs</url>
+          <line>46</line>
+          <properties documentPath="C:\Blast---DI-With-Zenject\Assets\Scripts\Blast\VisualLayer\Gameplay\UI\GameplayHudUi.cs" containingFunctionPresentation="Method 'InitializeView'">
+            <startOffsets>
+              <option value="978" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1035" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
