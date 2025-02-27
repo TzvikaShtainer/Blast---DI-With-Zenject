@@ -14,6 +14,9 @@ namespace Blast.DataLayer.Installers
         
         [SerializeField]
         private GameLevelMetadata[] _levelsMetadata;
+        
+        [SerializeField]
+        private InfraScreenMetadata[] _infraScreenMetadatas;
 
         [SerializeField] 
         private PlayerBalances _playerBalances;
@@ -53,6 +56,11 @@ namespace Blast.DataLayer.Installers
             subContainer
                 .Bind<GameLevelMetadata[]>()
                 .FromInstance(_levelsMetadata)
+                .AsCached();
+            
+            subContainer
+                .Bind<InfraScreenMetadata[]>()
+                .FromInstance(_infraScreenMetadatas)
                 .AsCached();
         }
     }

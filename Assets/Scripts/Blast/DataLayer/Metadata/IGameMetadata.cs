@@ -8,5 +8,7 @@ namespace Blast.DataLayer.Metadata
 		Object GetPrefabForCannon(PlayerCannonType playerCannonType);
 		
 		GameLevelMetadata GetLevelMetadata(GameLevelType levelType);
+		
+		InfraScreenMetadata GetInfraScreenMetadata(InfraScreenType screenType);
 	}
 }

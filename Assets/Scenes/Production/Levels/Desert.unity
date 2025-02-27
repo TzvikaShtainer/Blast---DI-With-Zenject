@@ -11860,6 +11860,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8569503773291040712, guid: 591187af76705e94986dea23be48e3d7,
         type: 3}
+      propertyPath: _levelType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569503773291040712, guid: 591187af76705e94986dea23be48e3d7,
+        type: 3}
       propertyPath: _cannonParentTrasform
       value: 
       objectReference: {fileID: 1905128374}

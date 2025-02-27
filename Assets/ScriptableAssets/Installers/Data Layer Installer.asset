@@ -33,20 +33,31 @@ MonoBehaviour:
     _levelName: Death Desert
     _sceneCoverSprite: {fileID: 21300000, guid: c759012636acef34fa3daae28b8edac6,
       type: 3}
-    _levelSceneBuildIndex: 2
+    _levelSceneBuildIndex: 5
     _cannonType: 0
   - _levelType: 1
     _levelName: Canyon
     _sceneCoverSprite: {fileID: 21300000, guid: d08cd2e433aa9bb4e9358505a8c6bb45,
       type: 3}
-    _levelSceneBuildIndex: 3
+    _levelSceneBuildIndex: 4
     _cannonType: 0
   - _levelType: 0
     _levelName: River
     _sceneCoverSprite: {fileID: 21300000, guid: 0d842f5424e9e9e4e9d528d172844ddc,
       type: 3}
-    _levelSceneBuildIndex: 4
+    _levelSceneBuildIndex: 6
     _cannonType: 0
+  _infraScreenMetadatas:
+  - _type: 1
+    _sceneBuildIndex: 1
+  - _type: 0
+    _sceneBuildIndex: 0
+  - _type: 2
+    _sceneBuildIndex: 2
+  - _type: 0
+    _sceneBuildIndex: 0
+  - _type: 3
+    _sceneBuildIndex: 3
   _playerBalances:
     _coins: 10
     _gems: 20
