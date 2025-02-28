@@ -10,5 +10,6 @@ namespace Blast.DataLayer.Metadata
 		GameLevelMetadata GetLevelMetadata(GameLevelType levelType);
 		
 		InfraScreenMetadata GetInfraScreenMetadata(InfraScreenType screenType);
+		GameLevelMetadata[] GetLevelsMetadata();
 	}
 }

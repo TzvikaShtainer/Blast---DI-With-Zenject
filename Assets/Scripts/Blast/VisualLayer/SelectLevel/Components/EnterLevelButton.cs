@@ -10,6 +10,9 @@ namespace Blast.VisualLayer.SelectLevel.Components
     public class EnterLevelButton : MonoBehaviour
     {
         #region Factories
+        
+        public class Factory : PlaceholderFactory<GameLevelMetadata, EnterLevelButton> { }
+        
         #endregion
         
         #region Editor
@@ -26,6 +29,10 @@ namespace Blast.VisualLayer.SelectLevel.Components
         #endregion
 
         #region Injects
+        
+        [Inject]
+        private IEnterLevelHandler _enterLevelHandler;
+        
         #endregion
 
         #region Fields
@@ -52,6 +59,7 @@ namespace Blast.VisualLayer.SelectLevel.Components
 
         public void OnClick()
         {
+            _enterLevelHandler.Execute(_levelMetadata.LevelType);
         }
 
         #endregion
