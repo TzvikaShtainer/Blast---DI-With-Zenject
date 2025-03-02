@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/EnterLevelHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/EnterLevelHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/SelectLevelScreenEntryPoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/SelectLevelScreenEntryPoint.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Installers/SelectLevelScreenInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Installers/SelectLevelScreenInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/Installers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/Installers/PopupsInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/Installers/PopupsInstaller.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/Canyon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/Canyon.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/River.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/River.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ZenjectDefaultSceneContractConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ZenjectDefaultSceneContractConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Game Popups.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Game Popups.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Select Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Select Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Data Layer Installer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableAssets/Installers/Data Layer Installer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/IGameMetadata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/IGameMetadata.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Components/EnterLevelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Components/EnterLevelButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/Editor/Debug/DebugMenuItems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/Editor/Debug/DebugMenuItems.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/UI/GameplayHudUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/UI/GameplayHudUi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/DigitalStore/DigitalStorePopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/DigitalStore/DigitalStorePopup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +141,10 @@
       <workItem from="1740375056684" duration="2665000" />
       <workItem from="1740548033943" duration="5983000" />
       <workItem from="1740633794484" duration="5824000" />
-      <workItem from="1740725751372" duration="4408000" />
+      <workItem from="1740725751372" duration="11344000" />
+      <workItem from="1740814613342" duration="7924000" />
+      <workItem from="1740830909887" duration="3751000" />
+      <workItem from="1740892872679" duration="3347000" />
     </task>
     <servers />
   </component>

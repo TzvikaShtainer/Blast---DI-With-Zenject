@@ -7,6 +7,10 @@ namespace Blast.VisualLayer.Popups.DigitalStore
     {
         #region Factories
 
+        public class Factory : PlaceholderFactory<DigitalStorePopup>
+        {
+            
+        }
         #endregion
         
         #region Fields

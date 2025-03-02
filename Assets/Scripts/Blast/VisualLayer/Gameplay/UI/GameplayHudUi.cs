@@ -58,6 +58,7 @@ namespace Blast.VisualLayer.Gameplay.UI
 
         public async void OnBackButtonClick()
         {
+            //Debug.Log("pressed back button");
             _backClickHandler.Execute();
         }
 
