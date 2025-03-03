@@ -31,6 +31,11 @@ namespace Blast.VisualLayer.SelectLevel.Installers
             Container
                 .BindInterfacesAndSelfTo<EnterLevelHandler>()//bind direct to the class
                 .AsSingle();
+
+            Container
+                .BindInterfacesTo<HudPlusCurrencyButtonClickHandler>()
+                .AsSingle();
+            
         }
     }
 }

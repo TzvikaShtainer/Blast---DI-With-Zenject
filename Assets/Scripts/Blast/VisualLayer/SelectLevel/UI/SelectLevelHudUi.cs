@@ -19,6 +19,9 @@ namespace Blast.VisualLayer.SelectLevel.UI
         #endregion
         
         #region Injects
+        
+        [Inject]
+        private IHudPlusCurrencyClickHandler _plusCurrencyHandler;
         #endregion
         
         #region Methods
@@ -43,6 +46,7 @@ namespace Blast.VisualLayer.SelectLevel.UI
 
         public async void OnCoinsPlusButtonClick()
         {
+            _plusCurrencyHandler.Execute();
         }
         
         public async void OnGemsPlusButtonClick()
