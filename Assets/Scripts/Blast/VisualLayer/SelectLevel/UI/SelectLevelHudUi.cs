@@ -22,6 +22,10 @@ namespace Blast.VisualLayer.SelectLevel.UI
         
         [Inject]
         private IHudPlusCurrencyClickHandler _plusCurrencyHandler;
+        
+        [Inject]
+        private IDataLayer _dataLayer;
+        
         #endregion
         
         #region Methods
@@ -33,11 +37,16 @@ namespace Blast.VisualLayer.SelectLevel.UI
 
         private void InitializeView()
         {
+            _dataLayer.Balances.CoinsBalanceChange += SyncUiWithData;
+            _dataLayer.Balances.GemsBalanceChange += SyncUiWithData;
+            
             SyncUiWithData();
         }
 
         private void SyncUiWithData()
         {
+            _coinsBalanceText.text = _dataLayer.Balances.Coins.ToString();
+            _gemsBalanceText.text = _dataLayer.Balances.Gems.ToString();
         }
 
         public async void OnSettingsButtonClick()

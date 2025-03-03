@@ -1,4 +1,5 @@
-﻿using Blast.VisualLayer.Popups.DigitalStore;
+﻿using Blast.DataLayer;
+using Blast.VisualLayer.Popups.DigitalStore;
 using Zenject;
 
 namespace Blast.VisualLayer.SelectLevel.Handlers
@@ -7,9 +8,24 @@ namespace Blast.VisualLayer.SelectLevel.Handlers
     {
         [Inject]
         private DigitalStorePopup.Factory _storePopupFactory;
-        public void Execute()
+        
+        [Inject]
+        private IDataLayer _dataLayer;
+        
+        public async void Execute()
         {
+            //במשחק אמיתי פה נממש את השירות שיוצר קשר עם החנות של גוגל ונבדוק לגבי הרכישה
             var popup = _storePopupFactory.Create();
+            var popupInteractionResult = await popup.WaitForResult();
+
+            if (popupInteractionResult.IsCanceled)
+            {
+                return;
+            }
+            
+            _dataLayer.Balances.AddCurrency(
+                popupInteractionResult.SelectedPack.CurrencyType, 
+                popupInteractionResult.SelectedPack.AdditionAmount);
         }
     }
 }

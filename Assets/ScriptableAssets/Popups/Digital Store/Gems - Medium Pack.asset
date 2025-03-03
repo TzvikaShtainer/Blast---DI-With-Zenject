@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Gems - Medium Pack
   m_EditorClassIdentifier: 
   _packName: Small Pack
-  _additionAmount: 5
+  _additionAmount: 10
   _currencyType: 1

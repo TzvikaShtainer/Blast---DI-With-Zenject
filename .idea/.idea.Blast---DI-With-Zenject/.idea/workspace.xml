@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/HudPlusCurrencyButtonClickHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/HudPlusCurrencyButtonClickHandler.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Game Popups.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Game Popups.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Installers/SelectLevelScreenInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Installers/SelectLevelScreenInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/DigitalStore/DigitalStorePopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/DigitalStore/DigitalStorePopup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/HudPlusCurrencyButtonClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/HudPlusCurrencyButtonClickHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/UI/SelectLevelHudUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/UI/SelectLevelHudUi.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +139,7 @@
       <workItem from="1740814613342" duration="7924000" />
       <workItem from="1740830909887" duration="3751000" />
       <workItem from="1740892872679" duration="3385000" />
-      <workItem from="1740979071572" duration="2222000" />
+      <workItem from="1740979071572" duration="4121000" />
     </task>
     <servers />
   </component>
