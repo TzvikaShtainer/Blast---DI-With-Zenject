@@ -9,6 +9,9 @@ namespace Blast.VisualLayer.Popups.YesNo
     public class YesNoPopup : Popup
     {
         #region Factories
+        
+        public class Factory : PlaceholderFactory<YesNoPopupArgs, YesNoPopup> { }
+        
         #endregion
         
         #region Editor
@@ -29,6 +32,8 @@ namespace Blast.VisualLayer.Popups.YesNo
         
         #region Fields
 
+        private UniTaskCompletionSource<YesNoPopupResult> _tcs;
+
         #endregion
         
         #region Methods
@@ -44,16 +49,24 @@ namespace Blast.VisualLayer.Popups.YesNo
 
         public UniTask<YesNoPopupResult> WaitForResult()
         {
-            return default;
+            _tcs = new UniTaskCompletionSource<YesNoPopupResult>();
+            
+            return _tcs.Task;
         }
 
         public void OnYesClick()
         {
+            var result = new YesNoPopupResult{ IsYes = true };
+            _tcs.TrySetResult(result); 
+            
             Close();
         }
 
         public void OnCancelClick()
         {
+            var result = new YesNoPopupResult{ IsYes = false };
+            _tcs.TrySetResult(result); 
+            
             Close();
         }
 

@@ -374,3 +374,5 @@ MonoBehaviour:
   _parentPopupCanvasTransform: {fileID: 1975455211}
   _storePopupPrefabRef: {fileID: 278548668858225203, guid: d0e5f4dfa27c440ef80ff2e1a1a67035,
     type: 3}
+  _yesNoPopupPrefabRef: {fileID: 1904144286864262237, guid: 8f441e8833942494e9e955d121622c1c,
+    type: 3}

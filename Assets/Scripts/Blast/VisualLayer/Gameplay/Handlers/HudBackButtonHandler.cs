@@ -1,6 +1,7 @@
 ﻿using Blast.DataTypes;
 using Blast.ServiceLayer.GameScenes;
 using Blast.VisualLayer.Loader;
+using Blast.VisualLayer.Popups.YesNo;
 using Cysharp.Threading.Tasks;
 using Zenject;
 
@@ -17,8 +18,19 @@ namespace Blast.VisualLayer.Gameplay.Handlers
         [Inject]
         private GameLevelType _currentLevelType;
         
+        [Inject]
+        private YesNoPopup.Factory _yesNoPopupFactory;
+        
         public async UniTask Execute()
         {
+            var popup = _yesNoPopupFactory.Create(YesNoPopupArgs.Default);
+            var result = await popup.WaitForResult();
+
+            if (result.IsNo)
+            {
+                return;
+            }
+            
             _loader.ResetData();
             await _loader.FadeIn();
             _loader.SetProgress(0.1f, "Loader");

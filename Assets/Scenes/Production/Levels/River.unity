@@ -13652,6 +13652,7 @@ MonoBehaviour:
   _contractNames: []
   _parentContractNames:
   - Loader
+  - Popups
 --- !u!4 &2090438253
 Transform:
   m_ObjectHideFlags: 0
