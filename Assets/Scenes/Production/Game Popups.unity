@@ -376,3 +376,5 @@ MonoBehaviour:
     type: 3}
   _yesNoPopupPrefabRef: {fileID: 1904144286864262237, guid: 8f441e8833942494e9e955d121622c1c,
     type: 3}
+  _selectCannonPopupPrefabRef: {fileID: 3595158079527998603, guid: d16844fb539a14c85ad1dd14c60a8edd,
+    type: 3}

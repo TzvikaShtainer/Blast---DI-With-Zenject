@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7235986652403890898}
   - component: {fileID: 7235986652403890896}
   - component: {fileID: 3595158079527998603}
+  - component: {fileID: 8218512117331190759}
+  - component: {fileID: 851812873415775028}
   m_Layer: 5
   m_Name: Select Cannon Popup
   m_TagString: Untagged
@@ -34,7 +36,7 @@ RectTransform:
   - {fileID: 8604124714304860879}
   - {fileID: 8792614726422871260}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -63,6 +65,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _okButton: {fileID: 8792614726422871261}
   _togglesParentTransform: {fileID: 8604124714304860879}
+--- !u!114 &8218512117331190759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7235986652403890901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08eca9f7688a0a24685b89133b020c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scriptableObjectInstallers: []
+  _monoInstallers:
+  - {fileID: 851812873415775028}
+  _installerPrefabs: []
+  _autoRun: 1
+  _kernel: {fileID: 0}
+--- !u!114 &851812873415775028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7235986652403890901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04479a1abee34a808549af6993220be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _selectCannonTogglePrefabRef: {fileID: 2326606116923702144, guid: faf0eaa919b804aad94d50e71cd2ae52,
+    type: 3}
 --- !u!1 &7768877078859260119
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,6 +179,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7235986652403890898}
     m_Modifications:
     - target: {fileID: 2902181398810367016, guid: 843e10f0d80b140618a06289e05eb22c,
@@ -314,6 +349,9 @@ PrefabInstance:
       value: SELECT SPACESHIP
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 843e10f0d80b140618a06289e05eb22c, type: 3}
 --- !u!224 &3933094563879388299 stripped
 RectTransform:
@@ -326,6 +364,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7235986652403890898}
     m_Modifications:
     - target: {fileID: 4641298005821155610, guid: 19fbbd70d30b146d083ceeb2d56917c9,
@@ -525,6 +564,9 @@ PrefabInstance:
       value: OK
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19fbbd70d30b146d083ceeb2d56917c9, type: 3}
 --- !u!224 &8792614726422871260 stripped
 RectTransform:

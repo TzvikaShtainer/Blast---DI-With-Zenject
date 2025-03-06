@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/Installers/SelectCannonPopupDependenciesInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/Installers/SelectCannonPopupDependenciesInstaller.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Popups/Select Cannon Popup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Popups/Select Cannon Popup.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Game Popups.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Game Popups.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Handlers/HudBackButtonHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Handlers/HudBackButtonHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/GameMetadata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/GameMetadata.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/IGameMetadata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/IGameMetadata.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/Installers/PopupsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/Installers/PopupsInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/YesNo/YesNoPopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/YesNo/YesNoPopup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/SelectCannon/SelectCannonPopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/SelectCannon/SelectCannonPopup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/SelectCannon/SelectCannonToggle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/SelectCannon/SelectCannonToggle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/EnterLevelHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/EnterLevelHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +147,10 @@
       <workItem from="1740830909887" duration="3751000" />
       <workItem from="1740892872679" duration="3385000" />
       <workItem from="1740979071572" duration="5137000" />
-      <workItem from="1741068986109" duration="1556000" />
+      <workItem from="1741068986109" duration="3042000" />
+      <workItem from="1741096063670" duration="1882000" />
+      <workItem from="1741152823826" duration="2808000" />
+      <workItem from="1741239137933" duration="1183000" />
     </task>
     <servers />
   </component>

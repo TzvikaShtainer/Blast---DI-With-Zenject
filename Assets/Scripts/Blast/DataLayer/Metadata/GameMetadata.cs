@@ -36,7 +36,7 @@ namespace Blast.DataLayer.Metadata
 
 		public GameLevelMetadata[] GetLevelsMetadata() => _levelsMetadata;
 
-		public CannonMetadata[] GetCannonsMatadata() => _cannonsMetadata;
+		public CannonMetadata[] GetCannonsMetadata() => _cannonsMetadata;
 
 		public GameLevelMetadata GetLevelMetadata(GameLevelType levelType)
 		{

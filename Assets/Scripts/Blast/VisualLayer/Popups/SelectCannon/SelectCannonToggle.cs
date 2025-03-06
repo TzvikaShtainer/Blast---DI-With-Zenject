@@ -16,6 +16,9 @@ namespace Blast.VisualLayer.Popups.SelectCannon
         #endregion
 
         #region Factories
+        
+        public class Factory : PlaceholderFactory<Transform, CannonMetadata, SelectCannonToggle> { }
+        
         #endregion
         
         #region Editor
