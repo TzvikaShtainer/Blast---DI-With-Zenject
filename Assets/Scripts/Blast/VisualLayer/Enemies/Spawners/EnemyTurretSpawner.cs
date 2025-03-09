@@ -15,6 +15,9 @@ namespace Blast.VisualLayer.Enemies.Spawners
 		[Inject]
 		private EnemyTurret.Factory _factory;
 		
+		[Inject]
+		private SignalBus _signalBus;
+		
 		#endregion
 		
 		private EnemyTurret _currentTurret;
@@ -25,6 +28,8 @@ namespace Blast.VisualLayer.Enemies.Spawners
 		public void BeginSpawning(IEnemyTarget target)
 		{
 			_currentTurret = _factory.Create(target);
+			
+			_signalBus.Fire<EnemyTurretSpawned>();
 		}
 
 		public void StopSpawning()

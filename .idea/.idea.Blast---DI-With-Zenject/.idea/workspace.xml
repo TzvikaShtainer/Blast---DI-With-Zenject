@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/Installers/SelectCannonPopupDependenciesInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/Installers/SelectCannonPopupDependenciesInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/State/Installers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/State/Installers/GameplayManagementInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/State/Installers/GameplayManagementInstaller.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Popups/Select Cannon Popup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Popups/Select Cannon Popup.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Game Popups.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Game Popups.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/GameMetadata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/GameMetadata.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/IGameMetadata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/DataLayer/Metadata/IGameMetadata.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/Installers/PopupsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/Installers/PopupsInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/SelectCannon/SelectCannonPopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/SelectCannon/SelectCannonPopup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/SelectCannon/SelectCannonToggle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Popups/SelectCannon/SelectCannonToggle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/EnterLevelHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/EnterLevelHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/Canyon.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/Canyon.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/Desert.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/Desert.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/River.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production/Levels/River.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/ServiceLayer/Signals/Installers/GameplaySignalsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/ServiceLayer/Signals/Installers/GameplaySignalsInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Enemies/Spawners/EnemyTurretSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Enemies/Spawners/EnemyTurretSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/State/SignalBasedStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/State/SignalBasedStateManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +150,9 @@
       <workItem from="1741096063670" duration="1882000" />
       <workItem from="1741152823826" duration="2808000" />
       <workItem from="1741239137933" duration="1183000" />
+      <workItem from="1741335188577" duration="3923000" />
+      <workItem from="1741420226722" duration="2709000" />
+      <workItem from="1741499196582" duration="1872000" />
     </task>
     <servers />
   </component>

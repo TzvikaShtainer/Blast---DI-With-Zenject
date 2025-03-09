@@ -5,9 +5,13 @@ using Zenject;
 
 namespace Blast.VisualLayer.Gameplay.State
 {
-	public class SignalBasedStateManager
+	public class SignalBasedStateManager : IInitializable
 	{
 		#region Injects
+		
+		[Inject]
+		private SignalBus _signalBus;
+		
 		#endregion
 
 		private int _enemiesRemains = 0;
@@ -16,6 +20,9 @@ namespace Blast.VisualLayer.Gameplay.State
 
 		public void Initialize()
 		{
+			_signalBus.Subscribe<EnemyTurretSpawned>(OnEnemySpawned);
+			_signalBus.Subscribe<EnemyTurretDestroyed>(OnEnemyDestroyed);
+			_signalBus.Subscribe<PlayerCannonDestroyed>(OnPlayerDestroyed);
 		}
 
 		private void OnEnemySpawned()

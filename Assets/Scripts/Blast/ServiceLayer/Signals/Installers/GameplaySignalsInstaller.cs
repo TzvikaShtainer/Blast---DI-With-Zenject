@@ -16,6 +16,7 @@ namespace Blast.ServiceLayer.Signals.Installers
             Container.DeclareSignal<EnemyTurretFired>();
             Container.DeclareSignal<EnemyTurretHit>();
             Container.DeclareSignal<EnemyTurretSpawned>();
+            Container.DeclareSignal<PlayerCannonDestroyed>();
         }
     }
 }
