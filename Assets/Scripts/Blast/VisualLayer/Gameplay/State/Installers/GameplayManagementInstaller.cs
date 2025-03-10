@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Blast.VisualLayer.Gameplay.Handlers;
+using UnityEngine;
 using Zenject;
 
 namespace Blast.VisualLayer.Gameplay.State.Installers
@@ -8,6 +9,10 @@ namespace Blast.VisualLayer.Gameplay.State.Installers
     {
         public override void InstallBindings()
         {
+            Container
+                .Bind<GameEndHandler>()
+                .AsTransient();
+            
             Container
                 .BindInterfacesTo<SignalBasedStateManager>()
                 .AsSingle();

@@ -12,6 +12,9 @@ namespace Blast.VisualLayer.Gameplay.State
 		[Inject]
 		private SignalBus _signalBus;
 		
+		[Inject]
+		private GameEndHandler _gameEndHandler;
+		
 		#endregion
 
 		private int _enemiesRemains = 0;
@@ -35,13 +38,13 @@ namespace Blast.VisualLayer.Gameplay.State
 			_enemiesRemains--;
 			if (_enemiesRemains <= 0)
 			{
-				// TODO: Execute GameEndHandler, player win
+				//_gameEndHandler.Execute(true);
 			}
 		}
 
 		private async void OnPlayerDestroyed()
 		{
-			// TODO: Execute GameEndHandler, player loose
+			//_gameEndHandler.Execute(false);
 		}
 
 		#endregion
