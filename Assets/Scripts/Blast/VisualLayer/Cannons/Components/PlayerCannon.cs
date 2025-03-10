@@ -38,7 +38,7 @@ namespace Blast.VisualLayer.Cannons.Components
             _weaponTrigger.OnFire.AddListener(OnWeaponFire);
         }
 
-        private void OnWeaponFire()
+        private void OnWeaponFire() 
         {
             _signalBus.Fire<PlayerCannonFired>();
         }
@@ -50,7 +50,7 @@ namespace Blast.VisualLayer.Cannons.Components
 
         private void OnCannonDestroyed()
         {
-            // TODO: Raise notification about player cannon destroyed
+            _signalBus.Fire<PlayerCannonDestroyed>();
         }
 
         #endregion

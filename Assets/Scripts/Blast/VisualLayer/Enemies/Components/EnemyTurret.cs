@@ -55,6 +55,7 @@ namespace Blast.VisualLayer.Enemies.Components
 		public void Construct(IEnemyTarget target)
 		{
 			_target = target;
+			_signalBus.Subscribe<GameEnd>(OnGameEnd);
 		}
 		
 		private void OnGameEnd()
@@ -66,7 +67,6 @@ namespace Blast.VisualLayer.Enemies.Components
 		private void Awake()
 		{
 			_damageable = GetComponent<Damageable>();
-			// TODO: Subscribe to GameEnd signal
 		}
 
 		private void Start()
@@ -83,7 +83,7 @@ namespace Blast.VisualLayer.Enemies.Components
 
 		private void OnDamageReceived(int receivedDamage)
 		{
-			// TODO: Raise notification EnemyTurretHit
+			_signalBus.Fire<EnemyTurretHit>();
 		}
 
 		private void OnDestroyed()

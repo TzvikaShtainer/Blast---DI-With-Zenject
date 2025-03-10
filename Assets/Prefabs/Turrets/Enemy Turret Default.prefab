@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 952783353}
   - component: {fileID: 952783355}
   - component: {fileID: 952783354}
+  - component: {fileID: 9037971613520992550}
   m_Layer: 8
   m_Name: Weapon Head
   m_TagString: Untagged
@@ -169,6 +170,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9037971613520992550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952783352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aecd921cbae47868fba736483500b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _triggerDelayMax: 0
+  _triggerDelayMin: 0
+  _launchingPoints: []
 --- !u!1 &1808467618
 GameObject:
   m_ObjectHideFlags: 0
