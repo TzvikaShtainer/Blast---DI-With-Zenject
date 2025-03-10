@@ -1,4 +1,5 @@
 ﻿using Blast.ServiceLayer.GameScenes;
+using Blast.ServiceLayer.TimeControl;
 using UnityEngine;
 using Zenject;
 
@@ -12,6 +13,11 @@ namespace Blast.ServiceLayer
             Container
                 .Bind<IGameScenesService>()
                 .To<GameScenesService>()
+                .AsSingle();
+            
+            Container
+                .Bind<ITimeController>()
+                .To<TimeController>()
                 .AsSingle();
         }
     }
