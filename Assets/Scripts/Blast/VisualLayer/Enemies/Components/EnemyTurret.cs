@@ -26,8 +26,8 @@ namespace Blast.VisualLayer.Enemies.Components
 		[SerializeField]
 		private float _lockAnglePrecision = 5;
 		
-		// [SerializeField]
-		// private AutomaticWeaponTrigger _weaponTrigger;
+		 //[SerializeField]
+		 //private AutomaticWeaponTrigger _weaponTrigger;
 		
 		#endregion
 		
@@ -79,6 +79,8 @@ namespace Blast.VisualLayer.Enemies.Components
 		{
 			_damageable.DamageReceived -= OnDamageReceived;
 			_damageable.Destroyed -= OnDestroyed;
+			
+			_signalBus.Unsubscribe<GameEnd>(OnGameEnd);
 		}
 
 		private void OnDamageReceived(int receivedDamage)

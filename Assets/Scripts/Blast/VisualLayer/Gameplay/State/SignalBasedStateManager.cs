@@ -38,13 +38,13 @@ namespace Blast.VisualLayer.Gameplay.State
 			_enemiesRemains--;
 			if (_enemiesRemains <= 0)
 			{
-				//_gameEndHandler.Execute(true);
+				_gameEndHandler.Execute(true);
 			}
 		}
 
 		private async void OnPlayerDestroyed()
 		{
-			//_gameEndHandler.Execute(false);
+			_gameEndHandler.Execute(false);
 		}
 
 		#endregion
