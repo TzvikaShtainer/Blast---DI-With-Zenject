@@ -47,6 +47,10 @@ namespace Blast.VisualLayer.Weapons.Projectiles
 		
 		private IMemoryPool _memoryPool;
 		
+		private ParticleSystem _muzzleParticles;
+		
+		private ParticleSystem _collisionEffectsParticles;
+		
 		#endregion
 		
 		#region Methods
@@ -105,13 +109,27 @@ namespace Blast.VisualLayer.Weapons.Projectiles
 
 		private void PlayMuzzleEffect(Vector3 effectPosition, Quaternion effectRotation)
 		{
-			Instantiate(_muzzleFlashVfxPrefabRef, effectPosition, effectRotation);
+			if (_muzzleParticles == null)
+			{
+				var vfxInstance = Instantiate(_muzzleFlashVfxPrefabRef, effectPosition, effectRotation);
+				_muzzleParticles = vfxInstance.GetComponent<ParticleSystem>();
+			}
+			_muzzleParticles.gameObject.transform.position = effectPosition;
+			_muzzleParticles.Play();
+			
 		}
 
 		private void PlayCollisionEffectAt(ContactPoint contactPoint)
 		{
 			var hitPoint = contactPoint;
-			Instantiate(_collisionVfxPrefabRef, hitPoint.point, Quaternion.LookRotation(hitPoint.normal));
+
+			if (_collisionEffectsParticles == null)
+			{
+				var vfxInstance = Instantiate(_collisionVfxPrefabRef, hitPoint.point, Quaternion.LookRotation(hitPoint.normal));
+				_collisionEffectsParticles = vfxInstance.GetComponent<ParticleSystem>();
+			}
+			_collisionEffectsParticles.gameObject.transform.position = hitPoint.point;
+			_collisionEffectsParticles.Play();
 		}
 
 		#endregion

@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Popups/Yes No Popup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Popups/Yes No Popup.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Buttons/Templates/Button Template Rect Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Buttons/Templates/Button Template Rect Green.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Projectiles/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Projectiles/Projectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Projectiles/ProjectileInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Projectiles/ProjectileInstaller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +177,7 @@
       <workItem from="1745664871140" duration="5296000" />
       <workItem from="1746168580402" duration="6770000" />
       <workItem from="1746256132719" duration="2541000" />
-      <workItem from="1746678434988" duration="2142000" />
+      <workItem from="1746678434988" duration="3272000" />
     </task>
     <servers />
   </component>
