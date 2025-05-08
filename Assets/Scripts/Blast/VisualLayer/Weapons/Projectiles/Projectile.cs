@@ -1,10 +1,11 @@
+using System;
 using Blast.VisualLayer.Components;
 using UnityEngine;
 using Zenject;
 
 namespace Blast.VisualLayer.Weapons.Projectiles
 {
-	public class Projectile : MonoBehaviour
+	public class Projectile : MonoBehaviour, IPoolable<Vector3, Vector3, IMemoryPool>
 	{
 		#region Factory
 		
@@ -44,16 +45,32 @@ namespace Blast.VisualLayer.Weapons.Projectiles
 
 		private int _damage;
 		
+		private IMemoryPool _memoryPool;
+		
 		#endregion
 		
 		#region Methods
 
-		[Inject]
-		private void Construct(Vector3 launchingPosition, Vector3 direction)
+		private void Awake()
 		{
+			gameObject.SetActive(false); //היה באג של שגיאה בגישה לפרוגקטייל ולכבות אותו פה  עזר לזה
+		}
+
+		public void OnSpawned(Vector3 launchingPosition, Vector3 direction, IMemoryPool memoryPool)
+		{
+			gameObject.SetActive(true);
 			_launchingPosition = launchingPosition;
 			_directionRotation = Quaternion.LookRotation(direction);
 			transform.SetPositionAndRotation(_launchingPosition, _directionRotation);
+			_memoryPool = memoryPool;
+		}
+		
+		public void OnDespawned()
+		{
+			gameObject.SetActive(false);
+			_speed = 0;
+			_directionRotation = Quaternion.identity;
+			_rb.velocity = Vector3.zero;
 		}
 
 		public void Fire(float speed, float maxDistance, int damage)
@@ -74,7 +91,7 @@ namespace Blast.VisualLayer.Weapons.Projectiles
 		{
 			if (Vector3.Distance(_launchingPosition, transform.position) > _maxDistance)
 			{
-				Destroy(gameObject);
+				_memoryPool.Despawn(this);
 			}
 		}
 
@@ -83,7 +100,7 @@ namespace Blast.VisualLayer.Weapons.Projectiles
 			PlayCollisionEffectAt(other.contacts[0]);
 			var damageable = other.gameObject.GetComponent<IDamageable>();
 			damageable?.Damage(_damage);
-			Destroy(gameObject);
+			_memoryPool.Despawn(this);
 		}
 
 		private void PlayMuzzleEffect(Vector3 effectPosition, Quaternion effectRotation)

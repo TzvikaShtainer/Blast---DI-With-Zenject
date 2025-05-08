@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ecd06a79-b9cf-4669-ac26-0d795e38fe06" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blast---DI-With-Zenject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Enemies/Components/EnemyTurret.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Enemies/Components/EnemyTurret.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/State/SignalBasedStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/State/SignalBasedStateManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Popups/Yes No Popup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Popups/Yes No Popup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Buttons/Templates/Button Template Rect Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Buttons/Templates/Button Template Rect Green.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Projectiles/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Projectiles/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Projectiles/ProjectileInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Weapons/Projectiles/ProjectileInstaller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +25,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/CannonStudio/Handlers/MockBackClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Handlers/GameEndHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Installers/GamePlayInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Loader/LoaderInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/HudPlusCurrencyButtonClickHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/SelectLevel/Handlers/SelectLevelScreenEntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c2d036c16ca64e0eb93703a3b13e733a171c00/1f/8780796a/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/OneDrive/Desktop/Blast-final_implementation/Assets/Scripts/Blast/DataLayer/DataLayer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -150,6 +156,31 @@
       <workItem from="1741499196582" duration="4240000" />
       <workItem from="1741510136715" duration="33000" />
       <workItem from="1741584730201" duration="821000" />
+      <workItem from="1741843612450" duration="603000" />
+      <workItem from="1742189858870" duration="2516000" />
+      <workItem from="1742199072798" duration="50000" />
+      <workItem from="1742276318225" duration="605000" />
+      <workItem from="1742362463398" duration="2154000" />
+      <workItem from="1742448664535" duration="1686000" />
+      <workItem from="1742708386965" duration="6574000" />
+      <workItem from="1742794326476" duration="3683000" />
+      <workItem from="1742884758250" duration="2560000" />
+      <workItem from="1742967991880" duration="2616000" />
+      <workItem from="1743310018951" duration="1238000" />
+      <workItem from="1743394803317" duration="1775000" />
+      <workItem from="1743833175537" duration="1868000" />
+      <workItem from="1744086697627" duration="3343000" />
+      <workItem from="1744172645775" duration="1539000" />
+      <workItem from="1744445945237" duration="1980000" />
+      <workItem from="1744612977040" duration="3102000" />
+      <workItem from="1744703248382" duration="1198000" />
+      <workItem from="1744972898562" duration="1268000" />
+      <workItem from="1745063178651" duration="22000" />
+      <workItem from="1745570198135" duration="793000" />
+      <workItem from="1745664871140" duration="5296000" />
+      <workItem from="1746168580402" duration="6770000" />
+      <workItem from="1746256132719" duration="2541000" />
+      <workItem from="1746678434988" duration="2142000" />
     </task>
     <servers />
   </component>
@@ -165,25 +196,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Blast/VisualLayer/Gameplay/Handlers/GameEndHandler.cs</url>
-          <line>34</line>
-          <properties documentPath="C:\Blast---DI-With-Zenject\Assets\Scripts\Blast\VisualLayer\Gameplay\Handlers\GameEndHandler.cs" containingFunctionPresentation="Method 'Execute'">
-            <startOffsets>
-              <option value="855" />
-            </startOffsets>
-            <endOffsets>
-              <option value="882" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

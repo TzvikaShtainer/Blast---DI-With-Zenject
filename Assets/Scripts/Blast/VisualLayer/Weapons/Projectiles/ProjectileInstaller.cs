@@ -14,6 +14,14 @@ namespace Blast.VisualLayer.Weapons.Projectiles
         
         [SerializeField]
         private GameObject _collisionVfxPrefabRef;
+
+        [SerializeField] 
+        [Range(10, 100)] 
+        private int _initialPoolSize = 20;
+        
+        [SerializeField] 
+        [Range(10, 100)] 
+        private int _maxPoolSize = 40;
         
         public override void InstallBindings()
         {
@@ -28,13 +36,16 @@ namespace Blast.VisualLayer.Weapons.Projectiles
                 .WithId(WeaponsBindingIds.CollisionVfxPrefabRef)
                 .FromInstance(_collisionVfxPrefabRef)
                 .AsTransient();
-            
+
             Container
                 .BindFactory<Vector3, Vector3, Projectile, Projectile.Factory>()
-                .FromComponentInNewPrefab(_projectilePrefabRef) // Create a new game object at the root of the scene using the given prefab
-                                                                // After zenject creates a new GameObject from the given prefab, it will
-                                                                // search the prefab for a component of type 'Foo' and return that
-                .AsSingle();
+                .FromPoolableMemoryPool(
+                    poolInitializer => poolInitializer
+                        .WithInitialSize(_initialPoolSize)
+                        .WithMaxSize(_maxPoolSize)
+                        .FromComponentInNewPrefab(_projectilePrefabRef)
+                        .UnderTransformGroup("Projectiles Pool"));
+
         }
     }
 }
